@@ -14,7 +14,7 @@ export const Modal = props => {
 			<div className="modal-dialog" role="document">
 				<div className="modal-content">
 					<div className="modal-header">
-						<h5 className="modal-title">Are you sure?</h5>
+						<h5 className="modal-title">Are you sure you want to delete?</h5>
 						{props.onClose ? (
 							<button
 								onClick={() => props.onClose()}
@@ -29,11 +29,11 @@ export const Modal = props => {
 						)}
 					</div>
 					<div className="modal-body">
-						<p>Warning: unknown consequences after this point... Kidding!</p>
+						<p></p>
 					</div>
 					<div className="modal-footer">
 						<button type="button" className="btn btn-primary">
-							Oh no!
+							No!
 						</button>
 						<button
 							type="button"
@@ -43,7 +43,7 @@ export const Modal = props => {
 								actions.deleteContact(props.id);
 								props.onClose(); // copy/pasted the same props from the button above to close
 							}}>
-							Do it!
+							Yes!
 						</button>
 					</div>
 				</div>

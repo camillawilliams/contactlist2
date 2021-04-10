@@ -13,17 +13,12 @@ export const ContactCard = props => {
 		<li className="list-group-item">
 			<div className="row w-100">
 				<div className="col-12 col-sm-6 col-md-3 px-0">
-					<img
-						src={MikePhoto}
-						alt="Rolando Scarfullery"
-						className="rounded-circle mx-auto d-block img-fluid"
-					/>
+					<img src={MikePhoto} alt="Camilla Williams" className="rounded-circle mx-auto d-block img-fluid" />
 				</div>
 				<div className="col-12 col-sm-6 col-md-9 text-center text-sm-left">
 					<div className=" float-right">
 						<Link to={`/edit/${props.contact.id}/${props.index}/${props.contact.full_name}`}>
 							<button className="btn">
-								{/* Above we will create our functionality of editing a contact */}
 								<i className="fas fa-pencil-alt mr-3" />
 							</button>
 						</Link>
@@ -40,7 +35,7 @@ export const ContactCard = props => {
 						className="fa fa-phone fa-fw text-muted mr-3"
 						data-toggle="tooltip"
 						title=""
-						data-original-title="(870) 288-4149"
+						data-original-title="(555) 555-5555"
 					/>
 					<span className="text-muted small">{props.contact.phone}</span>
 					<br />

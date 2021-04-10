@@ -1,14 +1,15 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link, useHistory } from "react-router-dom";
+import PropTypes from "prop-types";
 import { Context } from "../store/appContext";
+import { ContactCard } from "../component/ContactCard.js";
 
 export const AddContact = () => {
 	const { store, actions } = useContext(Context);
 	const history = useHistory();
-	// added useHistory hook to push back to the main page at '/' on the save button
+
 	const [newContact, setNewContact] = useState({
-		agenda_slug: "rolando_scarfullery",
-		// added property above with my typed string from postman to manipulate newContact instead of overwriting old values as it saves without worry when restarting gitpod
+		agenda_slug: "camilla_williams",
 		full_name: "",
 		email: "",
 		phone: "",
